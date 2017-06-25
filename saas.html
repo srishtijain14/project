@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/services.css">
+<head> 
+<title>2sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:#FF9933;">
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="#">2sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="#">Home</a></li>
+      <li><a style="margin-top:10%" href="#">About</a></li>
+      <li><a style="margin-top:10%" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+ <form action="/cgi-bin/saas.py" Method="POST">
+ <div style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);" class="panel panel-default">
+  <div style="font-size:30px;font-family:'Courgette',cursive;margin-top:5%;color:fuchsia;" class="panel-body">Services Available:-</div>
+   <div class="panel-body"> <input type="radio" name="service" value="firefox" style="font-size:20px;" > Firefox Web Browser <br><br>
+   <input type="radio" name="service" value="vlc" style="font-size:20px;"> VLC Media Player <br><br>
+   <input type="radio" name="service" value="cal" style="font-size:20px;"> Calculator <br><br>
+   <input type="radio" name="service" value="gedit" style="font-size:20px;"> Gedit Text Editor <br><br>
+   <input type="radio" name="service" value="office" style="font-size:20px;"> Openoffice <br><br>
+   <input type="radio" name="service" value="cam" style="font-size:20px;"> Webcam <br><br>
+   <input type="radio" name="service" value="screenshot" style="font-size:20px;"> Screenshot <br><br><br>
+   <input type="submit" name="button" value="Submit" style="font-size:13px;"> </div>
+  </div>
+ </form>
+</div>
+

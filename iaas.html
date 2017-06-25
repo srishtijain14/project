@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+<head> 
+<title>2sCloud:Cloud Computing Services</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background: linear-gradient(to bottom, #ff9933 0%, #ff6699 100%);">
+
+<nav class="navbar navbar-inverse">
+ <div class="container">
+  <div class="navbar-header">
+   <a style ="font-size:300%;margin-top:10%;" class="navbar-brand" href="#">2sCloud</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="margin-top:10%" href="#">Home</a></li>
+      <li><a style="margin-top:10%" href="#">About</a></li>
+      <li><a style="margin-top:10%" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+ <form action="/cgi-bin/iaas.py" Method="POST">
+ <div style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);" class="panel panel-default">
+  <div style="font-size:30px;font-family:'Courgette',cursive;margin-top:3%;color:fuchsia;" class="panel-body">Choose Specifictaion</div>
+   <div class="panel-body"> 
+   <div class="row">
+   <div class="col-md-3">
+    Opertaing System   <select name="os">
+     <option  value="Redhat7">Redhat7</option>
+     <option  value="windows7">windows7</option>
+     <option  value="kali">Kali</option>
+    </select>
+   </div>
+<br>
+<br>
+<br>
+    <div class="col-md-3">
+     RAM in MB   <select name="ram">
+      <option value="1024">1024</option>
+      <option value="2048">2048</option>
+      <option value="3072">3072</option>
+     </select>
+    </div>
+<br>
+<br>
+<br>
+     <div class="col-md-3">
+       No. Of CPU Cores   <select name="core">
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+     </select>
+    </div>
+<br>
+<br>
+<br>
+     <div class="col-md-3">
+       Hard Disk in GB   <select name="hdd">
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+     </select>
+    </div>
+<br>
+<br>
+<br>
+    <div class="col-md-3">
+     <input type="submit" class="btn btn-success" value="submit" name="submit">
+    </div>
+   </div>
+  </div>
+ </form>
+</div>
+</html>
